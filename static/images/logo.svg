@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="linear-gradient" y1="1" x2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3632ab"/>
+      <stop offset="1" stop-color="blue"/>
+    </linearGradient>
+    <clipPath id="clip-Custom_Size_1">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="Custom_Size_1" data-name="Custom Size – 1" clip-path="url(#clip-Custom_Size_1)">
+    <rect width="64" height="64" fill="url(#linear-gradient)"/>
+    <text id="PF" transform="translate(11 43)" fill="#fff" font-size="30" font-family="Georgia-BoldItalic, Georgia" font-weight="700" font-style="italic"><tspan x="0" y="0">PF</tspan></text>
+  </g>
+</svg>

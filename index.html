@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Yash Vora</title>
+
+        <!-- Logo Icon on Browser Tab -->
+        <link rel="icon" href="static/images/logo.svg">
+
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="static/css/bootstrap.css">
+
+        <!-- Font CDN -->
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
+
+        <!--CDN LINK OF JQUERY PARENT PLUG IN - COMPULSORY TO BE HERE. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+
+        <!-- CDN Link for Bootstrap Javascript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="static/css/style.css">
+
+        <!-- Javascript -->
+        <script src="static/scripts/FeedbackForm.js"></script>
+
+        <!-- CSS & JS for WOW Animation -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="static/scripts/wow.min.js" type="text/javascript"></script>
+        <link href="static/css/animate.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+    </head>
+    <body>
+        <!-- Navigation Menu -->
+        <div class="navMenu">
+            <nav class="navbar navbar-inverse navbar-fixed-top" style="border-radius: 0px;">
+                <div class="container-fluid" id="navItems">
+                    <!-- Website name and icon -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" id="nb" href="#profile"><img id="logo_icon" src="static/images/logo.svg" alt="logo">&nbsp;&nbsp;Port<span id="pf1">folio</span></a>
+                    </div>
+                    <!-- Menu Items -->
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#profile">Profile</a></li>
+                            <li><a href="#summary">About Me</a></li>
+                            <li><a href="#qualifications">Qualifications</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#projects">My Projects</a></li>
+                            <li><a href="#feedback">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Profile -->
+        <div class="profile_bg" id="profile">
+            <video src="static/videos/bg_video.mp4" autoplay loop muted class="profile_bg_video"></video>
+            <div class="profile-row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="profile_">
+                    <div class="profile-row-r1">
+                        <div class="profile-row-r1-c1 wow fadeInLeftBig">
+                            <img src="static/images/profile.png" alt="Yash Vora">
+                        </div>
+                        <div class="profile-row-r1-c2 wow fadeInRightBig">
+                            <div class="profile-row-r1-c2-r1">
+                                    <h2>I'm <span style="color: #0fe445;">Yash Vora</span></h2>
+                            </div>
+                            <div class="profile-row-r1-c2-r2">
+                                    <div class="static-txt">An Aspiring </div> 
+                                    <ul class="dynamic-txts">
+                                        <li><span>Web Designer</span></li>
+                                        <li><span>Web Developer</span></li>
+                                        <li><span>AI Developer</span></li>
+                                        <li><span>ML Developer</span></li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div><br/><br/><br/>
+                    <div class="profile-row-r2 wow fadeInUpBig">
+                        <center>
+                            <h4><i>Contact Me</i></h4><br/>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div><i class="fa fa-2x fa-phone"></i>&nbsp;&nbsp;+91-7405320021</div>
+                                        </td>
+                                        <td>
+                                            <div>
+                                                <i class="fa fa-2x fa-envelope"></i>&nbsp;&nbsp;
+                                                <a href="mailto:yashcvora@gmail.com">yashcvora@gmail.com</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div><i class="fa fa-2x fa-map-marker"></i>&nbsp;&nbsp;India, Gujarat</div>
+                                        </td>
+                                        <td>
+                                            <div><i class="fa fa-2x fa-forward"></i>&nbsp;&nbsp;Ahmedabad-380007</div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                    </div><br/>
+                    <div class="profile-row-r3 wow fadeInUpBig">
+                        <center>
+                            <a href="mailto:yashcvora@gmail.com" target="_blank"><i class="fa fa-2x fa-google-plus-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://github.com/Yash-Vora/" target="_blank"><i class="fa fa-2x fa-github-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/yashvora007/" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div class="container-fluid" id="summary">
+            <div class="summary-row wow fadeInLeft" data-wow-duration="2s">
+                <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10 col-xs-12">
+                    <div class="summary-row-r1">
+                        <h2><i class="fa fa-chain"></i> About Me <i class="fa fa-chain"></i></h2>
+                    </div><hr/>
+                    <div class="summary-row-r2">
+                        <ul>
+                            <li>Completed my graduation from Silver Oak College Of Engineering & Technology - Gujarat Technological University in Bachelor Of Engineering - Computer Engineering.</li>
+                            <li>Expertise in Web Designing with HTML, CSS, JAVASCRIPT, JQUERY. Also have good knowledge of BOOTSTRAP used for making web designing easy.</li>
+                            <li>Also have expertise in database used for Web App and Mobile App Development like SQLITE3, MYSQL, POSTGRES.</li>
+                            <li>Core expertise in Python Language. Used FLASK and DJANGO Framework for developing Web Application and creating API's.</li>
+                            <li>Also I am aware about booming technology Artificial Intelligence. I am a AI(Artificial Intelligence) / ML(Machine Learning) / DL(Deep Learning) Enthusiastic.</li>
+                            <li>In free time, I like to spend my time in hearing music, watching movies and playing games.</li>
+                            <li>Result oriented, self driven, self motivated, fast learner, very eager to adapt new technologies.</li>
+                        </ul>
+                    </div><hr/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Qualifications -->
+        <div class="container-fluid" id="qualifications">
+            <div class="qualifications-row wow fadeInLeft" data-wow-duration="2s">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
+                    <div class="qualifications-row-r1">
+                        <h2><i class="fa fa-connectdevelop"></i> Educational Qualifications <i class="fa fa-connectdevelop"></i></h2>
+                    </div>
+                    <div class="qualifications-row-r2">
+                        <table class="table table-responsive">
+                            <tr>
+                                <td>
+                                    Year<br/>
+                                    2016-2020
+                                </td>
+                                <td>
+                                    B.E in Computer Engineering from<br/>
+                                    Silver Oak College Of Engineering & Technology<br/>
+                                    Affiliated to Gujarat Technological University<br/>
+                                    Overall CGPA - 7.98
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Year<br/>
+                                    2015-2016
+                                </td>
+                                <td>
+                                    Completed 12<sup>th</sup> standard<br/>
+                                    from V.R Shah Higher Secondary School<br/>
+                                    G.H.S.E.B Board<br/>
+                                    Overall Percentage - 79%
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Year<br/>
+                                    2013-2014
+                                </td>
+                                <td>
+                                    Completed 10<sup>th</sup> standard<br/>
+                                    from Shree Sahajanand Secondary School<br/>
+                                    G.S.E.B Board<br/>
+                                    Overall Percentage - 84%
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="container-fluid" id="skills">
+            <div class="skills-row wow fadeInRight" data-wow-duration="2s">
+                <div class="col-lg-offset-6 col-lg-6 col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-6 col-xs-offset-2 col-xs-10">
+                    <div class="skills-row-r1">
+                        <h2><i class="fa fa-connectdevelop"></i> Skills <i class="fa fa-connectdevelop"></i></h2>
+                    </div>
+                    <div class="skills-row-r2">
+                        <table class="table table-responsive">
+                            <tr>
+                                <td>Programming Languages</td>
+                                <td>C, C++, Java, Javascript, Jquery, Python</td>
+                            </tr>
+                            <tr>
+                                <td>Web Designing</td>
+                                <td>HTML, CSS, Ajax</td>
+                            </tr>
+                            <tr>
+                                <td>Databases Known</td>
+                                <td>SQLite3, MySQl, PostgreSQl</td>
+                            </tr>
+                            <tr>
+                                <td>Backend Frameworks</td>
+                                <td>Flask, Django, Android</td>
+                            </tr>
+                            <tr>
+                                <td>IDE</td>
+                                <td>Visual Studio Code, Pycharm, Sublime Editor, Android Studio</td>
+                            </tr>
+                            <tr>
+                                <td>Operating Systems</td>
+                                <td>Microsoft Windows, Linux(Ubuntu,Fedora)</td>
+                            </tr>
+                            <tr>
+                                <td>Other Technologies</td>
+                                <td>Artificial Intelligence, Machine Learning, Deep Learning</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="container-fluid" id="experience">
+            <div class="experience-row wow fadeInLeft" data-wow-duration="2s">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-10">
+                    <div class="experience-row-r1">
+                        <h2><i class="fa fa-connectdevelop"></i> Experience <i class="fa fa-connectdevelop"></i></h2>
+                    </div>
+                    <div class="experience-row-r2">
+                        <table class="table table-responsive">
+                            <tr>
+                                <td>
+                                    Year<br/>
+                                    2019(Nov)-2020(May)
+                                </td>
+                                <td>
+                                    Internship on Flask Framework from<br/>
+                                    Arham Technosoft Private Limited<br/>
+                                    Tools : Python, Flask, HTML, CSS, PostgreSQl
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Year<br/>
+                                    2021(Jan)-2021(Jul)
+                                </td>
+                                <td>
+                                    Training on Data Science from<br/>
+                                    Fingertips Data Intelligence Solutions<br/>
+                                    Data Science & Analytical tools :<br/>
+                                    Statistics, MySQL, Python, R Language, Pandas, Numpy, ScikitLearn, Matplotlib, Seaborn, Ggplot, and Tableau
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Year<br/>
+                                    2021(Sep)-2021(Sep)
+                                </td>
+                                <td>
+                                    Internship in Data Science & Business Analytics<br/>
+                                    from The Sparks Foundation<br/>
+                                    Tools : Python, Jupyter Notebook, and Machine Learning
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="container-fluid" id="projects">
+            <div class="projects-row">
+                <div class="projects-row-r1 wow fadeInDown" data-wow-duration="2s">
+                    <h2><i class="fa fa-pie-chart"></i> My Projects <i class="fa fa-pie-chart"></i></h2>
+                </div>
+                <div class="projects-row-r2 wow fadeInUp" data-wow-duration="2s">
+                    <div class="grid">
+                        <a href="https://github.com/Yash-Vora/Movie-Recommendation-System-Using-Django" target="_blank" class="card1">
+                            <img src="static/images/movie-recommender.png" alt="">
+                            <div class="text">
+                                <h3>Movie Recommender</h3>
+                                <p>Movie Recommendation System using NLP & Python Django. Deployed on Heroku.</p>
+                                <button>Check Code</button>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Yash-Vora/Face-Recognition" target="_blank" class="card2">
+                            <img src="static/images/face_recognition.jpg" alt="">
+                            <div class="text">
+                                <h3>Face Recognition</h3>
+                                <p>Face Recognition System that identifies face using CNN & OpenCV-Python.</p>
+                                <button>Check Code</button>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Yash-Vora/Pose-Estimation-With-MoveNet-Lightning" target="_blank" class="card3">
+                            <img src="static/images/pose_estimation.png" alt="">
+                            <div class="text">
+                                <h3>Pose Estimation</h3>
+                                <p>Pose Estimation System that identifies 32 keypoints using Tensorflow & OpenCV-Python.</p>
+                                <button>Check Code</button>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Yash-Vora/Whats-App-Clone" target="_blank" class="card4">
+                            <img src="static/images/android_studio.png" alt="">
+                            <div class="text">
+                                <h3>WhatsApp Clone</h3>
+                                <p>Android Studio WhatsApp Clone App. Used Java, Firebase & XML.</p>
+                                <button>Check Code</button>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Yash-Vora/Food-Ordering-App" target="_blank" class="card5">
+                            <img src="static/images/android_studio.png" alt="">
+                            <div class="text">
+                                <h3>Food Ordering App</h3>
+                                <p>Android Studio Food Ordering App. Used Java, SQLite & XML.</p>
+                                <button>Check Code</button>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Yash-Vora/Contact-Us-Web-App" target="_blank" class="card6">
+                            <img src="static/images/django.jpg" alt="" style="background-color: white;">
+                            <div class="text">
+                                <h3>Chocolates App</h3>
+                                <p>Chocolates Web App made using Python Django.</p>
+                                <button>Check Code</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <div class="container-fluid" id="feedback">
+            <div class="feedback-row wow fadeInUp" data-wow-duration="2s">
+                <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+                    <div class="feedback-row-r1">
+                        <h2><i class="fa fa-edit"></i> Your Feedback <i class="fa fa-edit"></i></h2>
+                        <big id="BtnSuccess" class="text-success"></big>
+                    </div>
+                    <div class="feedback-row-r2">
+                        <form action="">
+                            <!-- First Name -->
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input id="FirstName" type="text" placeholder="Enter Your First Name..." maxlength="20" class="form-control">
+                                </div>
+                                <small id="FirstNameValidation" class="text-danger"></small>
+                            </div>
+
+                            <!-- Last Name -->
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input id="LastName" type="text" placeholder="Enter Your Last Name..." maxlength="20" class="form-control">
+                                </div>
+                                <small id="LastNameValidation" class="text-danger"></small>
+                            </div>
+
+                            <!-- City -->
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-address-book"></i></span>
+                                    <input id="City" type="text" placeholder="Enter Your City..." maxlength="50" class="form-control">
+                                </div>
+                                <small id="CityValidation" class="text-danger"></small>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input id="Email" type="text" placeholder="Enter Your Email..." maxlength="50" class="form-control">
+                                </div>
+                                <small id="EmailValidation" class="text-danger"></small>
+                            </div>
+
+                            <!-- Feedback -->
+                            <div class="form-group">
+                                <textarea id="Feedback" cols="100" rows="5" placeholder="Enter Your Feedback Here..." maxlength="250" class="form-control" style="border-radius: 10px;"></textarea>
+                                <small id="FeedbackValidation" class="text-danger"></small>
+                            </div>
+
+                            <div class="form-group">
+                                <center>
+                                    <input id="submit" type="button" value="Submit" class="btn-custom btn-custom-primary">
+                                </center>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container-fluid" id="footer">
+            <div class="footer-row">
+                <div class="footer-row-r1 wow fadeIn" data-wow-duration="2s">
+                    <a class="navbar-brand" id="nb" href="#profile"><img id="logo_icon" src="static/images/logo.svg" alt="logo">&nbsp;&nbsp;Port<span id="pf1">folio</span></a>
+                </div>
+                <div class="footer-row-r2 wow fadeIn" data-wow-duration="2s">
+                    <a href="mailto:yashcvora@gmail.com" target="_blank"><i class="fa fa-2x fa-google-plus-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/Yash-Vora/" target="_blank"><i class="fa fa-2x fa-github-square"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/yashvora007/" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
