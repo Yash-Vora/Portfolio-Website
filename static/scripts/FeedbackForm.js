@@ -6,8 +6,41 @@ var $EmailIdRegEx = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,8}\b$/i;
 
 var $FirstNameValidationFlag = false, $LastNameValidationFlag = false, $CityValidationFlag = false, $EmailValidationFlag = false, $FeedbackValidationFlag = false;
 
+function storeDataInGoogleSheet() {
+    var u_data = {
+        FirstName : $('#FirstName').val(),
+        LastName : $('#LastName').val(),
+        City : $('#City').val(),
+        Email : $('#Email').val(),
+        Feedback : $('#Feedback').val()
+    };
+
+    $.ajax({
+        type : 'POST',
+        url : 'https://sheetdb.io/api/v1/c67or4zs962rx',
+        data : u_data,
+        beforeSend : function() {
+            $('.loader').show();
+            $('#submit').hide();
+        },
+        success : function() {
+            $('.loader').hide();
+            $('#submit').show();
+            $('#submit').attr('disabled', true);
+            $('#BtnSuccess').html('Thanks For Your Feedback');
+            $('#BtnError').hide();
+        },
+        error : function() {
+            $('.loader').hide();
+            $('#submit').show();
+            $('#BtnError').html('Some Error Has Occured. Please Give Your Feedback Again.');
+        }
+    }); 
+}
+
 // Initialize JQuery
 $(document).ready(function(){
+    $('.loader').hide();
     // First Name Validation
     $('#FirstName').blur(function(){
         $('#FirstNameValidation').empty();
@@ -166,10 +199,11 @@ $(document).ready(function(){
             $FeedbackValidationFlag = true;
         }
 
+        $('#BtnSuccess').empty();
+        $('#BtnError').empty();
         // If all the fields are validated then following condition will work
-        if($FirstNameValidationFlag == true && $LastNameValidationFlag == true && $CityValidationFlag == true
-             && $EmailValidationFlag == true && $FeedbackValidationFlag == true) {
-                $('#BtnSuccess').html('Thanks For Your Feedback');
+        if($FirstNameValidationFlag == true && $LastNameValidationFlag == true && $CityValidationFlag == true && $EmailValidationFlag == true && $FeedbackValidationFlag == true) {
+            storeDataInGoogleSheet();
         }
     });
 });

@@ -216,11 +216,11 @@
                         <table class="table table-responsive">
                             <tr>
                                 <td>Programming Languages</td>
-                                <td>C, C++, Java, Javascript, Jquery, Python</td>
+                                <td>C, C++, Java, Python</td>
                             </tr>
                             <tr>
                                 <td>Web Designing</td>
-                                <td>HTML, CSS, Ajax</td>
+                                <td>HTML, CSS, Javascript, JQUERY, AJAX</td>
                             </tr>
                             <tr>
                                 <td>Databases Known</td>
@@ -365,6 +365,7 @@
                     <div class="feedback-row-r1">
                         <h2><i class="fa fa-edit"></i> Your Feedback <i class="fa fa-edit"></i></h2>
                         <big id="BtnSuccess" class="text-success"></big>
+                        <big id="BtnError" class="text-error"></big>
                     </div>
                     <div class="feedback-row-r2">
                         <form action="">
@@ -372,7 +373,7 @@
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                    <input id="FirstName" type="text" placeholder="Enter Your First Name..." maxlength="20" class="form-control">
+                                    <input id="FirstName" name="FirstName" type="text" placeholder="Enter Your First Name..." maxlength="20" class="form-control">
                                 </div>
                                 <small id="FirstNameValidation" class="text-danger"></small>
                             </div>
@@ -381,7 +382,7 @@
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                    <input id="LastName" type="text" placeholder="Enter Your Last Name..." maxlength="20" class="form-control">
+                                    <input id="LastName" name="LastName" type="text" placeholder="Enter Your Last Name..." maxlength="20" class="form-control">
                                 </div>
                                 <small id="LastNameValidation" class="text-danger"></small>
                             </div>
@@ -390,7 +391,7 @@
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-address-book"></i></span>
-                                    <input id="City" type="text" placeholder="Enter Your City..." maxlength="50" class="form-control">
+                                    <input id="City" name="City" type="text" placeholder="Enter Your City..." maxlength="50" class="form-control">
                                 </div>
                                 <small id="CityValidation" class="text-danger"></small>
                             </div>
@@ -399,19 +400,20 @@
                             <div class="form-group">
                                 <div class="input-group">
                                     <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                    <input id="Email" type="text" placeholder="Enter Your Email..." maxlength="50" class="form-control">
+                                    <input id="Email" name="Email" type="text" placeholder="Enter Your Email..." maxlength="50" class="form-control">
                                 </div>
                                 <small id="EmailValidation" class="text-danger"></small>
                             </div>
 
                             <!-- Feedback -->
                             <div class="form-group">
-                                <textarea id="Feedback" cols="100" rows="5" placeholder="Enter Your Feedback Here..." maxlength="250" class="form-control" style="border-radius: 10px;"></textarea>
+                                <textarea id="Feedback" name="Feedback" cols="100" rows="5" placeholder="Enter Your Feedback Here..." maxlength="250" class="form-control" style="border-radius: 10px;"></textarea>
                                 <small id="FeedbackValidation" class="text-danger"></small>
                             </div>
 
                             <div class="form-group">
                                 <center>
+                                    <div class="loader"></div>
                                     <input id="submit" type="button" value="Submit" class="btn-custom btn-custom-primary">
                                 </center>
                             </div>
