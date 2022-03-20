@@ -489,8 +489,8 @@ nav {
 
 #footer {
     color: var(--white);
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     background-attachment:fixed;
     background-image:url('../images/footer.jpg');
     background-repeat:no-repeat;
@@ -499,14 +499,48 @@ nav {
 
 .footer-row-r1 {
     display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+.footer-row-r1 ul li {
+    list-style: none;
+    line-height: 2;
+}
+
+.footer-row-r1 ul li i {
+    padding-right: 0.8rem;
+}
+
+.footer-row-r1 ul li a {
+    color: var(--white);
+}
+
+.footer-row-r1 ul li a:hover {
+    text-decoration: none;
+}
+
+.footer-row-r2 {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.footer-row-r2 {
+.footer-row-r3 {
     text-align: center;
 }
 
-.footer-row-r2 i.fa {
+.footer-row-r4 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 0.6rem;
+}
+
+.footer-row-r3 i.fa {
     color: var(--white);
 }
